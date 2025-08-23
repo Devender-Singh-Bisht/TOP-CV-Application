@@ -1,0 +1,128 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Kaushan+Script&display=swap');
+
+
+.leftside {
+    position: fixed;
+    flex: 0 1 auto;
+    max-width: 400px;
+    background-color: #c3cfe2;
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    color: black;
+}
+
+.logo-container {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+}
+
+.logo {
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.8rem;
+}
+
+
+/* Main content  */
+.main-content {
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.main-content::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(196, 194, 194, 0.733);
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+
+/* SectionHeading */
+.section-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Funnel Display", sans-serif;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.section-heading button, .heading button {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: #00c800;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.section-heading button:hover, .heading button:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+}
+
+
+/* Input */
+.input-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.input-row:nth-last-of-type(1) {
+    margin-bottom: 20px;
+}
+
+.input-row label {
+    font-size: 1.2rem;
+}
+
+.input-row label p {
+    font-size: 0.9rem;
+    color: red
+}
+
+.input-row input {
+    height: 35px;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease-out;
+}
+
+.input-row textarea {
+    height: 150px;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease-out;
+}
+
+.input-row input:focus-visible, .input-row textarea:focus-visible {
+    border: 2px solid black;
+    outline: none;
+    transform: scale(1.02);
+}
+
+
+
+
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.heading button {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(226, 41, 41);
+}
+
+
+/* Education Section  */
