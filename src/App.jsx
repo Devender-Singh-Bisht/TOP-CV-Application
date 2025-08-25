@@ -12,12 +12,10 @@ function App() {
 
   const [details, setDetails] = useState(resumeDetails);
 
-  console.log(details)
-
   return (
     <>
       <Leftside userDetails ={details} setDetails={setDetails}/>
-      <Rightside/>
+      <Rightside userDetails ={details} />
     </>
   )
 }

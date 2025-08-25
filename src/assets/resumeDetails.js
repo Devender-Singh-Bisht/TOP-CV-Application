@@ -27,9 +27,9 @@ const resumeDetails = {
     "experience": [
         {
             "id": crypto.randomUUID(),
-            "role": "Software Development Intern",
+            "role": "Softer Developer Intern",
             "organization": "XYZ Pvt. Ltd.",
-            "duration": "Jan 2024 – Mar 2024",
+            "duration": "Jan 2025 – Aug 2025",
             "responsibilities": [
                 "Developed a face-recognition attendance system using Python and OpenCV.",
                 "Optimized SQL queries, reducing retrieval time by 20%.",
@@ -42,7 +42,7 @@ const resumeDetails = {
             "id": crypto.randomUUID(),
             "course": "Bachelors in Computer Science Engineering",
             "institution": "XYZ University",
-            "location": "Uttarakhand, India",
+            "location": "NewYork, USA",
             "duration": "2022 - 2025",
             "coursework": [
                 "Data Structures",

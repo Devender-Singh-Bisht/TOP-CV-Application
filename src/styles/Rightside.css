@@ -1,0 +1,47 @@
+
+
+.rightside {
+    margin-left: 400px;
+}
+
+.right-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.right-top button {
+    width: 140px;
+    height: 45px;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgb(255, 221, 26);
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.right-top button:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 1px 6px -1px black;
+}
+
+.template-container {
+    padding: 40px 0;
+    background-color: rgb(139 198 53);
+
+}
+
+
+/* Media Print */
+@media print {
+    .template-container {
+        padding: 0;
+    }
+}

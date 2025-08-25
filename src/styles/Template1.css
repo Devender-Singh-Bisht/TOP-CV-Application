@@ -1,0 +1,169 @@
+/* Utilities */
+.p-20 {
+    padding: 0 40px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.hr {
+    width: 95%;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+
+/* Template  */
+.template {
+    max-width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background-color: white;
+    font-family: "PT Serif", serif;
+    font-size: 1.2rem;
+}
+
+/* Header  */
+.header {
+    background-color: #0072ff;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.name {
+    font-size: 2.6rem;
+}
+
+.header a {
+    color: inherit;
+    text-decoration: underline;
+
+}
+
+.summary {
+    margin-top: 10px;
+}
+
+/* Education  */
+.education-section {
+    margin-top: 10px;
+}
+
+.education+.education {
+    margin-top: 10px;
+}
+
+/* Experience  */
+.experience-section {
+    margin-top: 10px;
+}
+
+.experience+.experience {
+    margin-top: 10px;
+}
+
+.experience ul {
+    width: 90%;
+    margin: 0 auto;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+/* Skills  */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 0 0 auto;
+    padding-right: 20px;
+    list-style-type: square;
+}
+
+.skills li {
+    flex: 1 0 auto;
+}
+
+/* Certificates */
+.certifications-section {
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.certifications-section ul {
+    width: 90%;
+    margin: 0 0 0 auto;
+    padding-right: 20px;
+    list-style-type: square;
+}
+
+.certificate div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width : 1240px) {
+    .template {
+        max-width: 150mm;
+    }
+}
+
+@media screen and (max-width : 1050px) {
+    .template {
+        max-width: 110mm;
+        min-height: 197mm;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Media print  */
+@media print {
+    @page {
+        size: A4;
+        margin: 0 0 20px 0;
+    }
+
+    body {
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .template-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .leftside,
+    .right-top {
+        display: none !important;
+    }
+
+    .template {
+        width: 210mm;
+        height: 297mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+        page-break-after: always;
+    }
+}
