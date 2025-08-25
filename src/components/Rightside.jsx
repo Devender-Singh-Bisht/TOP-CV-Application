@@ -11,6 +11,7 @@ function Rightside({userDetails}) {
         <aside className="rightside">
 
             <div className="right-top">
+                <img src="../github-mark.png" alt="Github Logo" onClick={()=> window.open("https://github.com/Devender-Singh-Bisht/TOP-CV-Application", "_blank")}/>
                 <button onClick={()=> window.print()}>Preview & Print</button>
             </div>
 
