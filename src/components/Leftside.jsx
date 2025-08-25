@@ -83,7 +83,7 @@ function SectionHeading({ title, button = false, setDetails }) {
         if (title.toLowerCase().includes("experiences")) {
             setDetails((prevDetails) => {
                 let newExperience = [...prevDetails["experience"]];
-                newExperience.push({"id": crypto.randomUUID(), "title": "", "company": "", "location": "", "duration": "", "responsibilities": []});
+                newExperience.push({"id": crypto.randomUUID(), "role": "", "organization": "", "duration": "", "responsibilities": []});
                 let newDetails = { ...prevDetails, "experience": newExperience };
                 return newDetails;
             })
@@ -92,7 +92,7 @@ function SectionHeading({ title, button = false, setDetails }) {
         if (title.toLowerCase().includes("certificates")) {
             setDetails((prevDetails) => {
                 let newCertificate = [...prevDetails["certifications"]];
-                newCertificate.push({"id": crypto.randomUUID(), "name": "", "company": "", "provider": "", "year": ""});
+                newCertificate.push({"id": crypto.randomUUID(), "name": "", "provider": "", "year": ""});
                 return { ...prevDetails, "certifications": newCertificate };
             })
         }
@@ -216,7 +216,7 @@ function Education({ eduId, educationDetails, setDetails }) {
             <Input id="institute-city" label="City" type="text" name="location" value={educationDetails["location"]} handleChange={handleChange} />
             <Input id="course" label="Course" type="text" name="course" value={educationDetails["course"]} handleChange={handleChange} />
             <Input id="duration" label="Duration" type="text" name="duration" value={educationDetails["duration"]} handleChange={handleChange} />
-            <Input id="coursework" label="Course (mention few lines if want)" type="textarea" name="coursework" info="Use ',' to seperate the key points" value={educationDetails["coursework"]} handleChange={handleChange} />
+            <Input id="coursework" label="CourseWork (mention few lines if want)" type="textarea" name="coursework" info="Use ',' to seperate the key points" value={educationDetails["coursework"]} handleChange={handleChange} />
         </div>
     );
 }
@@ -245,7 +245,7 @@ function Experience({expId, experienceDetail, setDetails}) {
             let newExperience = [...prevDetails["experience"]];
             newExperience.map(exp => {
                 if (exp["id"] === expId) {
-                    if (name === "responsibilities") {
+                    if (event.target.name === "responsibilities") {
                         exp[event.target.name] = event.target.value.split(",");
                         return
                     }
@@ -253,7 +253,7 @@ function Experience({expId, experienceDetail, setDetails}) {
                     return
                 }
             });
-            return {...prevDetails, "experience": newEducation}
+            return {...prevDetails, "experience": newExperience}
         })
     }
 
@@ -261,10 +261,10 @@ function Experience({expId, experienceDetail, setDetails}) {
         <div className="education">
             <SubHeading id={expId} title="Experience" setDetails={setDetails} />
 
-            <Input id="role" label="Role" type="text" name="role" value={experienceDetail["role"]} onChange={(event) => handleChange(event)} />
-            <Input id="organization" label="Organization" type="text" name="organization" value={experienceDetail["organization"]} onChange={(event) => handleChange(event)} />
-            <Input id="work-duration" label="Duration" type="text" name="duration" value={experienceDetail["duration"]} onChange={(event) => handleChange(event)} />
-            <Input id="responsibilities" label="Responsibilities" type="textarea" name="responsibilities" info="Use ',' to seperate the key points" value={experienceDetail["responsibilities"]} onChange={(event) => handleChange(event)} />
+            <Input id="role" label="Role" type="text" name="role" value={experienceDetail["role"]} handleChange={handleChange} />
+            <Input id="organization" label="Organization" type="text" name="organization" value={experienceDetail["organization"]} handleChange={handleChange} />
+            <Input id="work-duration" label="Duration" type="text" name="duration" value={experienceDetail["duration"]} handleChange={handleChange} />
+            <Input id="responsibilities" label="Responsibilities" type="textarea" name="responsibilities" info="Use ',' to seperate the key points" value={experienceDetail["responsibilities"]} handleChange={handleChange} />
         </div>
     );
 }

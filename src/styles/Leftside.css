@@ -1,14 +1,11 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Kaushan+Script&display=swap');
-
 
 .leftside {
     position: fixed;
     flex: 0 1 auto;
     max-width: 400px;
     background-color: #c3cfe2;
-    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
     color: black;
 }
 
@@ -110,8 +107,6 @@
 
 
 
-
-
 .heading {
     display: flex;
     justify-content: space-between;
@@ -123,6 +118,3 @@
     width: 30px;
     background-color: rgb(226, 41, 41);
 }
-
-
-/* Education Section  */
