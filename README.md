@@ -1,12 +1,19 @@
-# React + Vite
+# Quick Resume - TOP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based Resume Builder where users can fill in their personal details, education, experience, and projects to generate a printable resume.  
+The layout is designed in an A4-sized container (595×842 px) to ensure it looks the same on screen and in print/PDF.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- Add, edit, and delete sections like Personal Info, Education, Experience, and Projects.
+- Real-time updates with React `useState`.
+- Print-ready A4 design with custom styling.
+- Download/print resume directly from browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Usage
+- Fill in your resume details using the input sections.
+- Preview your resume instantly on the right panel.
+- Click the "Preview & Print" button to print or save your resume as a PDF.
+- All styles are optimized for both screen and print.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Live Preview
+ [![Live Preview](https://img.shields.io/badge/Live--Preview-Click%20Here-brightgreen?style=for-the-badge)](https://quickresumes.netlify.app/)
