@@ -15,7 +15,7 @@ function Leftside({ userDetails, setDetails }) {
 
 
     const handleChange = ( event) => {
-        if (name === "summary") {
+        if (event.target.name === "summary") {
             setDetails(prevDetails => {
                 return { ...prevDetails, "summary": event.target.value };
             })
